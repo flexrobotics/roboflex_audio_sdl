@@ -50,7 +50,7 @@ long_description = (Path(__file__).parent / "README.md").read_text()
 
 setup(
     name='roboflex.audio_sdl',
-    version='0.1.2',
+    version='0.1.3',
     description='Roboflex Audio input library using Simple Directmedia Layer (SDL2)',
     author='Colin Prepscius',
     author_email='colinprepscius@gmail.com',
