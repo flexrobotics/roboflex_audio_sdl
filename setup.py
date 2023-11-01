@@ -50,7 +50,7 @@ long_description = (Path(__file__).parent / "README.md").read_text()
 
 setup(
     name='roboflex.audio_sdl',
-    version='0.1.1',
+    version='0.1.2',
     description='Roboflex Audio input library using Simple Directmedia Layer (SDL2)',
     author='Colin Prepscius',
     author_email='colinprepscius@gmail.com',
@@ -72,7 +72,7 @@ setup(
     license = "MIT",
     python_requires='>=3.6',
     install_requires=['numpy', 'roboflex'],
-    ext_modules=[CMakeExtension('roboflex/audio_alsa/roboflex_audio_sdl_ext')],
+    ext_modules=[CMakeExtension('roboflex/audio_sdl/roboflex_audio_sdl_ext')],
     cmdclass=dict(build_ext=CMakeBuild),
     py_modules=['__init__'],
     packages=['roboflex.audio_sdl'],
