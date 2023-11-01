@@ -8,6 +8,10 @@ Requires SDL to be installed. More than likely, it already is installed in your 
 
     apt-get install libsdl2-dev
 
+    # or maybe on mac:
+
+    brew install sdl2
+
 ## pip install
 
     pip install roboflex.audio_sdl

@@ -1,7 +1,7 @@
 # python/CMakeLists.txt
 cmake_minimum_required(VERSION 3.24)
 
-project(roboflex_audio_sdl_python VERSION 0.1.4 DESCRIPTION "roboflex audio sdl python")
+project(roboflex_audio_sdl_python VERSION 0.1.5 DESCRIPTION "roboflex audio sdl python")
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
