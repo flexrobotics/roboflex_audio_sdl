@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
 
-project(roboflex_audio_sdl VERSION 0.1.5 DESCRIPTION "roboflex audio sensor using SDL2")
+project(roboflex_audio_sdl VERSION 0.1.6 DESCRIPTION "roboflex audio sensor using SDL2")
 
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 20)

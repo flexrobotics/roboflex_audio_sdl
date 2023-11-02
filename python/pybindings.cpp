@@ -50,6 +50,9 @@ PYBIND11_MODULE(roboflex_audio_sdl_ext, m) {
             py::arg("name") = "AudioSensor",
             py::arg("data_key") = "data",
             py::arg("debug") = false)
+        .def_property_readonly("sample_rate", &AudioSensor::get_sample_rate)
+        .def_property_readonly("channels", &AudioSensor::get_channels)
+        .def_static("show_devices", &AudioSensor::show_devices)
     ;
 }
 

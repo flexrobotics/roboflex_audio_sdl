@@ -55,10 +55,11 @@ public:
 
     static void show_devices();
 
+    unsigned int get_sample_rate() const { return sample_rate; }
+    unsigned int get_channels() const { return channels; }
+
     void start() override;
     void stop() override;
-
-    unsigned int get_sample_rate() const { return sample_rate; }
 
 protected:
 

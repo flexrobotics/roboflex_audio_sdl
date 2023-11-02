@@ -39,6 +39,13 @@ There is only one: **AudioSensor**
     # must be started (like all sensors)!
     audio_sensor.start()
 
+    # you can get the realized channels and sampling rate (might be different from what you requested):
+    audio_sensor.sample_rate
+    audio_sensor.channels
+
+    # you can print the available detected devices, through a static method
+    ras.AudioSensor.show_devices()
+
 This sensor publishes a TensorMessage, with the audio data encoded into a tensor of shape (C, S), where C is num channels, and S is capture_samples, under the key <data_key>.
 
 
