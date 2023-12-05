@@ -53,18 +53,8 @@ target_include_directories(roboflex_audio_sdl PUBLIC
 
 # Link against the necessary libraries
 target_link_libraries(roboflex_audio_sdl PUBLIC 
-    roboflex_core
-    #SDL2
     ${SDL2_LIBRARIES}
-
-    # Unfortunately, we need to link against all these libraries
-    # because they are used by roboflex_core, and cmake doesn't
-    # seem to be transitivily doing it's thing. Urgh, someone help.
-    flatbuffers_util 
-    xtensor 
-    xsimd 
-    xtl
-    Eigen3::Eigen
+    roboflex_core
 )
 
 
