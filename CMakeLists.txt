@@ -25,11 +25,11 @@ FetchContent_MakeAvailable(roboflex_core)
 # # download and build roboflex_transport_zmq
 # ONLY NEEDED IF YOU COMPILE THE EXAMPLES
 # TODO: separate out into a separate CMakeLists.txt in examples
-# FetchContent_Declare(roboflex_transport_zmq
-#     GIT_REPOSITORY https://github.com/flexrobotics/roboflex_transport_zmq.git
-#     GIT_TAG        main
-# )
-# FetchContent_MakeAvailable(roboflex_transport_zmq)
+FetchContent_Declare(roboflex_transport_zmq
+    GIT_REPOSITORY https://github.com/flexrobotics/roboflex_transport_zmq.git
+    GIT_TAG        main
+)
+FetchContent_MakeAvailable(roboflex_transport_zmq)
 
 # -------------------- 
 # Define the library
@@ -62,12 +62,12 @@ target_link_libraries(roboflex_audio_sdl PUBLIC
 # Examples
 
 # basic_0 example
-# add_executable(stream_from_mic_cpp examples/stream_from_mic_cpp.cpp)
-# target_link_libraries(stream_from_mic_cpp PRIVATE 
-#     roboflex_core 
-#     roboflex_audio_sdl
-#     roboflex_transport_zmq
-# )
+add_executable(stream_from_mic_cpp examples/stream_from_mic_cpp.cpp)
+target_link_libraries(stream_from_mic_cpp PRIVATE 
+    roboflex_core 
+    roboflex_audio_sdl
+    roboflex_transport_zmq
+)
 
 
 # -------------------- 

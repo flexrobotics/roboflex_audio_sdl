@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sstream>
-#include <xtensor/xtensor.hpp>
-#include <xtensor/xadapt.hpp>
+#include <xtensor/containers/xtensor.hpp>
+#include <xtensor/containers/xadapt.hpp>
 #include "roboflex_audio_sdl/audio_sdl.h"
 #include "roboflex_core/serialization/flex_eigen.h"
 #include "roboflex_core/serialization/flex_utils.h"

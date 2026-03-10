@@ -1,13 +1,14 @@
 #include <roboflex_audio_sdl/audio_sdl.h>
 #include <unistd.h>
 #include <roboflex_transport_zmq/zmq_nodes.h>
+#include <roboflex_core/core_nodes/message_printer.h>
 
 int main() {
 
     roboflex::audio_sdl::AudioSensor::show_devices();
 
     auto audio_sensor = roboflex::audio_sdl::AudioSensor(
-        0,              // device index
+        1,              // device index
         2,              // channels
         44100,          // frequency
         512,            // capture_samples
@@ -24,6 +25,8 @@ int main() {
         "ZMQPublisher",     // node name
         2                   // queue size
     );
+
+    // auto msg_printer = roboflex::nodes::MessagePrinter();
 
     audio_sensor > zmq_pub;
 

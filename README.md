@@ -4,6 +4,8 @@ Support for reading audio data using Simple Directmedia Layer.
 
 ## System dependencies
 
+Requires python development libraries, and numpy. To compile the c++, we suggest a virtual python environment with numpy installed.
+
 Requires SDL to be installed. More than likely, it already is installed in your distro. But if not:
 
     apt-get install libsdl2-dev
